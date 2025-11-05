@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: var(--primeryblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+footer img {
+    width: 50%;
+}
+
+.social img {
+    width: 10%;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+footer a {
+    color: white;
+}
+
+footer nav {
+    display: flex;
+    gap: 20px;
+}
