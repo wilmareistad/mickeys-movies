@@ -16,13 +16,20 @@
 
 <body>
     <header>
-        <img src="logo2.png" alt="logo">
-        <nav>
+        <nav class="nav-left">
             <ul>
                 <li><a href="#">Start</a></li>
                 <li><a href="#">Tickets</a></li>
+            </ul>
+        </nav>
+
+        <img src="logo2.png" alt="logo">
+
+        <nav class="nav-right">
+            <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="#">News</a></li>
             </ul>
+
         </nav>
     </header>

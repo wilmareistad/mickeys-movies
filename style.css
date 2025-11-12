@@ -59,7 +59,7 @@ section {
 
 h2 {
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
     margin: 30px;
     font-weight: 500;
@@ -98,9 +98,16 @@ h3 {
     justify-content: space-around;
 }
 
-.playing-movies img, .comming-soon img {
-    height: 15vh;
+.playing-movies img{
+    height: auto;
     border-radius: 3px;
+    width: 100%;
+}
+
+.comming-soon img {
+    height: auto;
+    border-radius: 3px;
+    width: 45%;
 }
 
 .newsletter div {
@@ -110,7 +117,7 @@ h3 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 80vw;
+    width: 90vw;
     align-items: center;
     border-radius: 5px;
 }
@@ -122,9 +129,21 @@ h3 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     width: 30%;
     margin-bottom: 7%;
+    padding: 10px;
+    font-size: 1rem;
 }
 
 .newsletter {
     display: flex;
     justify-content: center;
+}
+
+.chicken, .lilo {
+    width: 45%;
+    height: auto;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+
 }
