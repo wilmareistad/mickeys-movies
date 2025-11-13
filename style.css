@@ -144,6 +144,49 @@ h3 {
     text-align: center;
 }
 
-@media (min-width: 600px) {
+.desktop-hero {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+} 
 
+.section-hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
+}
+
+.hero, .desktop-hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (min-width: 600px) {
+    .hero {
+        display: none;
+    }
+
+    .desktop-hero {
+        display: block;
+    }
+
+    .newsletter button {
+    border: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 30%;
+    margin-bottom: 7%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.ordertickets {
+    height: 80px; 
+    font-size: 1.25rem;
+}
 }

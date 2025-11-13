@@ -7,6 +7,7 @@
             <span class="campaign-text">Campaign 99SEK</span>
         </div>
         <img class="hero" src="https://lumiere-a.akamaihd.net/v1/images/p_thelionking_19752_1_0b9de87b.jpeg?region=0%2C0%2C540%2C810" alt="The Lion king Movie">
+        <img class="desktop-hero" src="https://images-prod.ai.tv2.no/v2/image-packs/pfimg_pack_01k7e83mh0f4av8gc2jamx6wr7?height=630">
         <button class="ordertickets">
             <span>ORDER TICKETS</span>
         </button>

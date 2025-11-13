@@ -16,19 +16,13 @@
 
 <body>
     <header>
-        <nav class="nav-left">
-            <ul>
-                <li><a href="#">Start</a></li>
-                <li><a href="#">Tickets</a></li>
-            </ul>
-        </nav>
-
         <img src="logo2.png" alt="logo">
-
-        <nav class="nav-right">
+        <nav>
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">News</a></li>
+                <li><a href="index.php">Start</a></li>
+                <li><a href="aboutlionking.php">Tickets</a></li>
+                <li><a href="aboutlionking.php">About</a></li>
+                <!-- <li><a href="#">News</a></li> -->
             </ul>
 
         </nav>
