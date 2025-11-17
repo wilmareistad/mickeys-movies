@@ -17,7 +17,7 @@ header img {
 nav ul {
   list-style: none; 
   margin: 0;
-  padding: 1.5rem;
+  padding: 0.5rem;
   display: flex;
   /* gap: 2.5rem;  */
   justify-content: space-between;
@@ -34,15 +34,13 @@ nav a {
 
 @media (min-width: 600px) {
   header img {
-    max-width: 800px;
-    /* width: 30%;
-    padding: 0; */
+    height: 173px;
+    width: auto;
     }
 
   header {
   flex-direction: column;
   align-items: center;
-  padding: 1rem 3rem;
   }
 
 
