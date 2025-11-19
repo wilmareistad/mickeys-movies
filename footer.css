@@ -34,3 +34,18 @@ footer nav {
     display: flex;
     gap: 20px;
 }
+
+@media (min-width: 600px) {
+    footer nav {
+        gap: 100px;
+    }
+
+    .social {
+        gap: 7%;
+    }
+
+    .social img {
+        width: 7%;
+        margin: 20px;
+    }
+}
