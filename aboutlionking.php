@@ -48,7 +48,7 @@ require __DIR__."/header.php";
                 Disney’s epic adventure follows the story of Simba, a feisty lion cub who “just can’t wait to be king.” Led astray by his ambitious Uncle Scar, Simba adopts a carefree lifestyle with his hilarious companions, Timon and Pumbaa, and forgets his regal responsibilities. But destiny calls and he must decide when the time is right to return to the Pride Lands and reclaim his place in the “Circle of Life.”
             </p>
         </section>
-        <div class="infobox1" id="infobox2">
+        <div class="infobox2">
             <div id="ib2left">
                 <section id="duration">
                     <div class="infotitle">

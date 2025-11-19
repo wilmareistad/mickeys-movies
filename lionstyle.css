@@ -34,14 +34,6 @@
     
 }
 
-
-@media(min-width: 1200px){
-    .poster{
-        content:url("https://lumiere-a.akamaihd.net/v1/images/p_thelionking_19752_1_0b9de87b.jpeg?region=0%2C0%2C540%2C810");
-    }
-}
-
-
 .datebutton{
     background-color:white;
     width:5.5rem;
@@ -90,7 +82,7 @@
     color:gray;
 }
 
-#infobox2{
+.infobox2{
     grid-row-start: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -98,6 +90,9 @@
     column-gap: 0.5rem;
     grid-template-areas: 
     "ib2left ib2right";
+    padding:5%;
+    margin: 5%;
+    background-color:white;
     width:90vw;
 }
 
@@ -154,4 +149,69 @@
     "image image"
     "image image";
     width: 100vw;
+}
+
+
+@media(min-width: 1200px){
+    .poster{
+        content:url("https://lumiere-a.akamaihd.net/v1/images/p_thelionking_19752_1_0b9de87b.jpeg?region=0%2C0%2C540%2C810");
+        width: 20vw;
+        height:auto;
+    }
+
+    .ticketbox {
+    background-color:var(--funnypink);
+    grid-row-start: auto;
+    padding: 0.25rem;
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    "datebutton datebutton datebutton datebutton"
+    "datebutton datebutton datebutton datebutton"
+    "datebutton datebutton datebutton datebutton";
+    width: 20vw;
+    }
+
+    .infobox1{
+        width:20vw;
+        height:auto;
+    }
+
+    .infobox2{
+        width:20vw;
+        height:auto;
+    }
+
+    .trailerwrapper{
+        width:20vw;
+        height:auto;
+    }
+
+    .imageswrapper{
+    grid-row-start: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    "image image image image";
+    width: 100vw;
+}
+
+    .bgwrapper{
+            grid-row-start: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        column-gap: 0.5rem;
+        grid-template-areas: 
+        "poster infobox1 trailerwrapper"
+        "poster ticketbox infobox2"
+        "imageswrapper imageswrapper imageswrapper";
+        width: 100vw;
+    }
+
+
 }
