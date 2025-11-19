@@ -114,7 +114,10 @@ require __DIR__."/header.php";
 
         </section>
         <section class="imageswrapper">
-
+            <img src="/lionpics/lion1.png" class="image">
+            <img src="/lionpics/lion2.png" class="image">
+            <img src="/lionpics/lion3.png" class="image">
+            <img src="/lionpics/lion4.png" class="image">
         </section>
     </div>
 </html>
