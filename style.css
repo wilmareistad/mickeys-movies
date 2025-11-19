@@ -101,9 +101,6 @@ h3 {
     gap: 2rem;
     text-align: center;
     padding: 2rem;
-
-    /* display: flex;
-    justify-content: space-around; */
 }
 
 .playing-movies img{
@@ -111,12 +108,6 @@ h3 {
     border-radius: 3px;
     width: 100%;
 }
-/* 
-.comming-soon img {
-    height: auto;
-    border-radius: 3px;
-    width: 45%;
-} */
 
 .playing-movies img, .comming-soon img {
     width: 100%;
@@ -154,12 +145,6 @@ h3 {
     justify-content: center;
 }
 
-/* .chicken, .lilo {
-    width: 45%;
-    height: auto;
-    text-align: center;
-} */
-
 .desktop-hero {
     display: none;
     position: absolute;
@@ -182,14 +167,27 @@ h3 {
     object-fit: cover;
 }
 
-.lilo {
+.lilo, .kejsaren, .chicken, .lady-lufsen {
     position: relative;
 }
 
-.lilo button {
+.lilo button, .kejsaren button, .chicken button, .lady-lufsen button {
     position: absolute;
-    bottom: 2%;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accentyellow);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2 ease;
 }
+
+.chicken button, .lady-lufsen button {
+    bottom: 25%;
+} 
 
 
 @media (min-width: 600px) {
@@ -204,16 +202,18 @@ h3 {
     .newsletter button {
         border: 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        width: 30%;
+        width: 25%;
         margin: 4%;
         padding: 10px;
-        font-size: 1rem;
+        font-size: 3rem;
+        border-radius: 50px;
 }
 
     .ordertickets {
         height: 80px; 
         font-size: 1.25rem;
         bottom: 10%;
+        z-index: 5;
 }
 
     .ordertickets:hover {
@@ -226,6 +226,43 @@ h3 {
     
     .playing-movies, .comming-soon {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .lilo button, .kejsaren button, .chicken button, .lady-lufsen button {
+        padding: 1rem;
+        font-weight: 600;
+        border-radius: 10px;
+        bottom: 20%;
+    }
+    
+    .lilo button:hover, .kejsaren button:hover, .chicken button:hover, .lady-lufsen button:hover {
+        transform: translate(-50%) scale(1.1);
+  }
+  
+  .section-hero {
+    position: relative;
   }
 
+  .section-hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 248, 231, 0) 0%,
+        var(--lazybeige) 100%
+    );
+  }
+
+  .newsletter div {
+    width: 70vw;
+    font-weight: 600;
+  }
+
+  .ordertickets span {
+    font-weight: 600;
+  }
 }

@@ -8,9 +8,11 @@
         </div>
         <img class="hero" src="https://lumiere-a.akamaihd.net/v1/images/p_thelionking_19752_1_0b9de87b.jpeg?region=0%2C0%2C540%2C810" alt="The Lion king Movie">
         <img class="desktop-hero" src="https://images-prod.ai.tv2.no/v2/image-packs/pfimg_pack_01k7e83mh0f4av8gc2jamx6wr7?height=630">
-        <button class="ordertickets">
-            <span>ORDER TICKETS</span>
-        </button>
+        <a href="aboutlionking.php">
+            <button class="ordertickets">
+                <span>ORDER TICKETS</span>
+            </button>
+        </a>
         <h3>Enjoy The Lion King for only 99 SEK</h3>
     </section>
     <section>
@@ -21,16 +23,19 @@
                 <button>199 SEK</button>
                 <p>Lilo & Stitch</p>
             </div>
-            <div>
+            <div class="kejsaren">
                 <img src="https://www.moviezine.se/wp-content/uploads/2025/02/large_fe6dcc89002b0e075e9b79cb4b99c3c0-l_120917_d7ed3d0c.jpg" alt="Kejsarens nya-stil movie">
-                <p>Kejsarens nya stil</p>
+                <button>199 SEK</button>
+                <p>The Emperor's New Groove</p>
             </div>
             <div class="chicken">
                 <img src="https://www.moviezine.se/wp-content/uploads/2025/02/large_be2f06a5403eed9b347f7f10540c9c3e-502924.jpg" alt="Lill Kycklingen movie">
-                <p>Lilla Kycklingen</p>
+                <button>199 SEK</button>
+                <p>Chicken Little</p>
             </div>
-            <div class="Lady-lufsen">
+            <div class="lady-lufsen">
                 <img src="https://www.moviezine.se/wp-content/uploads/2025/02/large_f8ea9cacdb5fe170acf73246f3ec4856-ladylufsen.jpg">
+                <button>199 SEK</button>
                 <p>Lady & Lufsen</p>
             </div>
         </div>
