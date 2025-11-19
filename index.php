@@ -18,6 +18,7 @@
         <div class="playing-movies">
             <div class="lilo">
                 <img src="https://www.moviezine.se/wp-content/uploads/2025/02/large_12c8d2093a479ccde0e79695e879838f-open-uri20150422-12561-1dajwj_23920e88.jpeg" alt="Lilo and stitch movie">
+                <button>199 SEK</button>
                 <p>Lilo & Stitch</p>
             </div>
             <div>
