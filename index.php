@@ -1,5 +1,9 @@
 <?php require __DIR__ . "/header.php" ?>
 
+<!-- <div class="tinkerbell-wrapper">
+    <img class="tinkerbell" src="https://www.freeiconspng.com/uploads/tinkerbell-png-9.png" alt="Tinkerbell">
+</div> -->
+
 <main>
     <section class="section-hero">
         <div class="campaign">
@@ -41,19 +45,48 @@
         </div>
         <h2>Comming soon!</h2>
         <div class="comming-soon">
-            <img src="https://www.moviezine.se/wp-content/uploads/2025/02/large_original-911.jpeg" alt="Tarzan Movie">
+            <img class="tarzan" src="https://www.moviezine.se/wp-content/uploads/2025/02/large_original-911.jpeg" alt="Tarzan Movie">
             <img src="https://www.moviezine.se/wp-content/uploads/2025/02/large_0e0c324530767c224af685c4421d9ef6-koganget.jpg" alt="Kogänget Movie">
             <img src="https://www.moviezine.se/wp-content/uploads/2025/02/large_5eba3f45ac8c7484fbe2775103b5738e-bjornbroder.jpg" alt="Björnbröder Movie">
-            <img src="https://www.moviezine.se/wp-content/uploads/2025/02/large_7e0dcb8d9cd7a1c6626e036404dad23a-vilddjuren.jpg" alt="vildjuren">
+            <img class="vild" src="https://www.moviezine.se/wp-content/uploads/2025/02/large_7e0dcb8d9cd7a1c6626e036404dad23a-vilddjuren.jpg" alt="vildjuren">
         </div>
     </section>
     <section class="newsletter">
         <div>
             <p>Join the magic – subscribe to our newsletter!</p>
-            <button>Join</button>
+            <div class="musse-container">
+                <button>Join</button>
+                <img class="musse" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Mickey_Mouse_%28poster_version%29.svg/1070px-Mickey_Mouse_%28poster_version%29.svg.png" alt="mickey">
+            </div>
         </div>
     </section>
 
 </main>
 
 <?php require __DIR__ . "/footer.php" ?>
+
+<script>
+    let flown = false;
+
+    const tinkerbell = document.querySelector('.tinkerbell-wrapper');
+    const playingSection = document.querySelector('.playing-movies');
+
+    function flyTinkerbell() {
+        if (flown) return;
+        flown = true;
+        tinkerbell.style.opacity = "1";
+        tinkerbell.classList.add("active");
+    }
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                flyTinkerbell();
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    observer.observe(playingSection);
+</script>

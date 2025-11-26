@@ -38,7 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 80px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 1px rgba(0, 0, 0, 1);
     border: 0;
     transition: transform 0.2s ease;
 
@@ -78,12 +78,15 @@ h3 {
     right: 0.8rem; 
     width: 150px;     
     height: auto;
+    z-index: 5;
 }
 
 .discount {
     display: block;
     width: 100%;
     height: 100%;
+    
+
 }
 
 .campaign-text {
@@ -121,8 +124,6 @@ h3 {
     background-color: #FFEBBB;
     flex-direction: column;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
     width: 90vw;
     align-items: center;
     border-radius: 5px;
@@ -132,7 +133,7 @@ h3 {
     background-color: var(--accentyellow);
     border-radius: 20px;
     border: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 1px rgba(0, 0, 0, 1);
     width: 30%;
     margin-bottom: 7%;
     padding: 10px;
@@ -143,6 +144,8 @@ h3 {
 .newsletter {
     display: flex;
     justify-content: center;
+    margin-top: 68px;
+    margin-bottom: 68px;
 }
 
 .desktop-hero {
@@ -181,7 +184,7 @@ h3 {
     padding: 0.5rem;
     border-radius: 5px;
     font-weight: 500;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.2 ease;
 }
 
@@ -189,80 +192,147 @@ h3 {
     bottom: 25%;
 } 
 
+.musse {
+    width: 12%;
+    position: absolute;
+    left: 10px;
+    bottom: 12px;
+}
+.musse-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
 
-@media (min-width: 600px) {
+
+.tinkerbell {
+    opacity: 0;
+}
+
+
+
+@media (min-width: 900px) {
+    .campaign-text {
+        font-weight: 500;
+    }
+    .campaign {
+        width: 200px;
+    }
+
     .hero {
         display: none;
     }
-
+    
     .desktop-hero {
         display: block;
     }
-
+    
     .newsletter button {
         border: 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         width: 25%;
         margin: 4%;
         padding: 10px;
-        font-size: 3rem;
+        font-size: 2rem;
         border-radius: 50px;
-}
-
+    }
+    
     .ordertickets {
         height: 80px; 
         font-size: 1.25rem;
         bottom: 10%;
         z-index: 5;
-}
-
+    }
+    
     .ordertickets:hover {
         transform: translateX(-50%) scale(1.1);
     }
-
+    
     .newsletter button:hover {
         transform: scale(1.1);
     }
     
     .playing-movies, .comming-soon {
         grid-template-columns: repeat(4, 1fr);
+        margin: 2rem;
     }
-
+    
     .lilo button, .kejsaren button, .chicken button, .lady-lufsen button {
         padding: 1rem;
         font-weight: 600;
         border-radius: 10px;
-        bottom: 20%;
+        bottom: 120px;
+        width: 70%;
     }
     
     .lilo button:hover, .kejsaren button:hover, .chicken button:hover, .lady-lufsen button:hover {
         transform: translate(-50%) scale(1.1);
-  }
-  
-  .section-hero {
-    position: relative;
-  }
-
-  .section-hero::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30%;
-    background: linear-gradient(
-        to bottom,
-        rgba(255, 248, 231, 0) 0%,
-        var(--lazybeige) 100%
-    );
-  }
-
-  .newsletter div {
-    width: 70vw;
-    font-weight: 600;
-  }
-
-  .ordertickets span {
-    font-weight: 600;
-  }
+    }
+    
+    .section-hero {
+        position: relative;
+    }
+    
+    .section-hero::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 248, 231, 0) 0%,
+            var(--lazybeige) 100%
+            );
+        }
+        
+        .newsletter div {
+            width: 70vw;
+            font-weight: 600;
+        }
+        
+        .ordertickets span {
+            font-weight: 600;
+        }
+        
+        }
+        
+        
+        @media (min-width: 1000px) {
+            .lilo button, .kejsaren button, .chicken button, .lady-lufsen button {
+                bottom: 150px;
+            }
+            .tinkerbell {
+              width: 120px;
+              animation: flyAcross 4s ease-out forwards;
+              filter: drop-shadow(0 0 12px var(--accentyellow));
+            }
+            
+            @keyframes flyAcross {
+              0% {
+                transform: translateX(0) translateY(0) rotate(10deg);
+                opacity: 1;
+              }
+              50% {
+                transform: translateX(50vw) translateY(-40px) rotate(-15deg);
+              }
+              100% {
+                transform: translateX(110vw) translateY(0) rotate(10deg);
+                opacity: 1;
+              }
+            }
+        }
+        /*test grejer här*/
+        .tinkerbell-wrapper {
+            position: fixed;
+            top: 30%;
+            left: -150px; /* start offscreen */
+            width: auto;
+            height: auto;
+  z-index: 99999;
+  pointer-events: none;
+  opacity: 0;
 }
+
