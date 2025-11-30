@@ -204,6 +204,16 @@
     transition-duration: 1s;
 }
 
+.playbutton:hover ~ .trailerimg{
+    filter:brightness(100%);
+    transition-duration: 1s;    
+}
+
+.datebutton:hover{
+    scale: 125%;
+    transition-duration: 1s;
+}
+
 /*---DÖLJS VID MOBILE---*/
 #trailerdesktop{
     display:none;
@@ -275,6 +285,7 @@
 
     .datebuttons{
         column-gap:0.25rem;
+        grid-template-rows: 10vh;
     }
 
     .datebutton{
