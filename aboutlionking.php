@@ -12,11 +12,9 @@ require __DIR__."/header.php";
         <h1 class=titletext>
             The Lion King
         </h1>
-        <section class="trailertext">
-            <p>
-                Trailer:
-            </p>
-        </section>
+        <p class="trailertext">
+            Trailer:
+        </p>
     </div>
     <div  class="bgwrapper">
         <div class="postandotherwrap">

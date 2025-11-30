@@ -168,6 +168,7 @@
     margin: 5%;
     width:45vw;
     margin-left: 5vw;
+    border-radius: 15px;
 }
 
 .imageswrapper{
@@ -221,8 +222,8 @@
 
 
     .playbutton{
-        left:25vh;
-        top:12vh;
+        left:18vh;
+        top:9vh;
     }
 
     .titletext{
@@ -231,14 +232,17 @@
 
     .trailertext{
         display:grid;
+        font-weight:bold;
+        font-size:xx-large;
+        margin-top:2vh;
     }
 
     .infotext{
-        font-size: 22px;
+        font-size: 16px;
     }
 
     .infotitle{
-        font-size:22px;
+        font-size:16px;
     }
 
     #trailermobile{
@@ -247,7 +251,10 @@
 
     #trailerdesktop{
         display:block;
-        width: 35vw;
+        width: 26vw;
+        height:13rem;
+        margin-left:1vw;
+        margin-top:3vh;
     }
 
     #ticketmobile{
@@ -261,9 +268,9 @@
     .poster{
         display:grid;
         content:url("https://lumiere-a.akamaihd.net/v1/images/p_thelionking_19752_1_0b9de87b.jpeg?region=0%2C0%2C540%2C810");
-        width: 50vw;
-        margin-top:-30vh;
-        margin-left:-10vw;
+        width: 31vw;
+        margin-top:-15vh;
+        margin-left:-7vw;
     }
 
     .datebuttons{
@@ -279,32 +286,39 @@
     
     }
 
+    .ticketlabel{
+        margin-left:1vw;
+        margin-top: 0.5vh;
+    }
+
     .ticketbox {
     background-color:var(--funnypink);
     grid-row-start: auto;
     padding: 0.25rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 7vh 2fr;
     column-gap: 0.25rem;
-    width: 43vw;
-    height: 27rem;
+    width: 30.5vw;
+    height: 20rem;
     grid-template-areas:
     "ticketlabel"
     "datebuttons";
     }
 
     .infobox1{
-        width:43vw;
-        height:22rem;    
+        width:32vw;
+        height:16rem;    
         margin:0%;
         background-color: var(--lazybeige);
         z-index: 2;
     }
 
     .infobox2{
-        width:43vw;
-        height:27rem;
+        width:29vw;
+        height:20rem;
+        grid-template-columns: 15vw 10vw;
+        column-gap: 2vw;
         margin:0%;
     }
 
@@ -320,27 +334,28 @@
     grid-template-areas: 
     "titletext trailertext"; 
     margin-top: 2%;
-    margin-left: 50vw;
+    margin-left: 37.5vw;
     z-index:150;
     }
 
     .otherwrapper{
     display: grid;
-    grid-template-columns: 43vw;
-    grid-template-rows: 40vh;
-    column-gap: 3rem;
-    row-gap: 3rem;
+    grid-template-columns: 32vw;
+    grid-template-rows: 30vh;
+    column-gap: 0.25rem;
+    row-gap: 1rem;
     grid-template-areas: 
     "infobox1 trailerwrapper"
     "ticketbox infobox2";
-    margin-top:-20vh;
+    margin-top:-12vh;
     }
 
     .postandotherwrap{
         display:flex;
         justify-content: center;
-        gap: 4rem;
-        scale:75%;
+        gap: 1rem;
+        margin-top:7vh;
+        margin-left:10vw;
     }
 
 
@@ -348,16 +363,23 @@
     grid-row-start: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
+    grid-template-rows: 45vh;
+    column-gap: 5vw;
     grid-template-areas: 
     "image image"
     "image image";
     width: 100vw;
-    height:40vw;
+    height:100vh;
     }
 
-    .trailerimg{}
+    .image{
+        margin-left:5%;
+        width:43vw;
+    }
+
+    .trailerimg{
+        filter: brightness(50%);
+    }
 
 }
 
