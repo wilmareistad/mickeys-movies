@@ -62,6 +62,7 @@ require __DIR__."/header.php";
                 </section>
                 <section class="trailerwrapper" id="trailerdesktop">
                     <img src="/playbutton.svg" class="playbutton">
+                    <img src="https://images-prod.ai.tv2.no/v2/image-packs/pfimg_pack_01k7e83mh0f4av8gc2jamx6wr7?height=630" class="trailerimg">
                 </section>
                 <div class="ticketbox" id="ticketdesktop">
                     <p class="ticketlabel">
@@ -118,7 +119,7 @@ require __DIR__."/header.php";
                             </div>
                             <div class="infotext">
                                 Action and adventure, <br>
-                                Coming of Age, <br>
+                                Coming of Age,
                                 Animation, <br>
                                 Musicals
                             </div>

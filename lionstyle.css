@@ -40,6 +40,9 @@
     padding: 1vw;
     margin: 1vh;
     border-radius:10%;
+    font-weight:bold;
+    text-align: center  ;
+    line-height:350%;
 }
 
 .ticketlabel{
@@ -183,8 +186,7 @@
     background-color:#8C8c8c;
     color: white;
 }
-
-#playbutton{
+.playbutton{
     display:block;
     size: 60px;
     position:absolute;
@@ -192,6 +194,13 @@
 
 .titletext{
     margin-left:2%;
+}
+
+/*---ANIMATIONER---*/
+
+.playbutton:hover{
+    scale:125%;
+    transition-duration: 1s;
 }
 
 /*---DÖLJS VID MOBILE---*/
@@ -210,8 +219,14 @@
 /*---DESKTOP---*/
 @media(min-width: 1200px){
 
-    #textwrapper{
-        margin-left:40vw;
+
+    .playbutton{
+        left:25vh;
+        top:12vh;
+    }
+
+    .titletext{
+        z-index:200;
     }
 
     .trailertext{
@@ -219,7 +234,11 @@
     }
 
     .infotext{
-        font-size: 16px;
+        font-size: 22px;
+    }
+
+    .infotitle{
+        font-size:22px;
     }
 
     #trailermobile{
@@ -228,6 +247,7 @@
 
     #trailerdesktop{
         display:block;
+        width: 35vw;
     }
 
     #ticketmobile{
@@ -241,10 +261,9 @@
     .poster{
         display:grid;
         content:url("https://lumiere-a.akamaihd.net/v1/images/p_thelionking_19752_1_0b9de87b.jpeg?region=0%2C0%2C540%2C810");
-        width: 40vw;
-        height: 60vw;
-        margin-top:-5vh;
-        margin-left:-15vw;
+        width: 50vw;
+        margin-top:-30vh;
+        margin-left:-10vw;
     }
 
     .datebuttons{
@@ -268,22 +287,24 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     column-gap: 0.25rem;
-    width: 35vw;
-    height: 25vw;
+    width: 43vw;
+    height: 27rem;
     grid-template-areas:
     "ticketlabel"
     "datebuttons";
     }
 
     .infobox1{
-        width:35vw;
-        height:20vw;    
+        width:43vw;
+        height:22rem;    
         margin:0%;
+        background-color: var(--lazybeige);
+        z-index: 2;
     }
 
     .infobox2{
-        width:35vw;
-        height:25vw;
+        width:43vw;
+        height:27rem;
         margin:0%;
     }
 
@@ -298,15 +319,21 @@
     column-gap: 3rem;
     grid-template-areas: 
     "titletext trailertext"; 
+    margin-top: 2%;
+    margin-left: 50vw;
+    z-index:150;
     }
 
     .otherwrapper{
     display: grid;
-    grid-template-columns: 35vw;
+    grid-template-columns: 43vw;
+    grid-template-rows: 40vh;
     column-gap: 3rem;
+    row-gap: 3rem;
     grid-template-areas: 
     "infobox1 trailerwrapper"
     "ticketbox infobox2";
+    margin-top:-20vh;
     }
 
     .postandotherwrap{
@@ -329,6 +356,8 @@
     width: 100vw;
     height:40vw;
     }
+
+    .trailerimg{}
 
 }
 
