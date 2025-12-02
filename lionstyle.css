@@ -168,7 +168,7 @@
     height: auto;
     margin: 5%;
     width:45vw;
-    margin-left: 5vw;
+    margin-left: 5%;
     border-radius: 15px;
 }
 
@@ -198,22 +198,7 @@
     margin-left:2%;
 }
 
-/*---ANIMATIONER---*/
 
-.playbutton:hover{
-    scale:125%;
-    transition-duration: 1s;
-}
-
-.playbutton:hover ~ .trailerimg{
-    filter:brightness(100%);
-    transition-duration: 1s;    
-}
-
-.datebutton:hover{
-    scale: 125%;
-    transition-duration: 1s;
-}
 
 /*---DÖLJS VID MOBILE---*/
 #trailerdesktop{
@@ -231,6 +216,23 @@
 /*---DESKTOP---*/
 @media(min-width: 1200px){
 
+
+    /*---ANIMATIONER---*/
+
+    .playbutton:hover{
+        scale:125%;
+        transition-duration: 1s;
+    }
+
+    .playbutton:hover ~ .trailerimg{
+        filter:brightness(100%);
+        transition-duration: 1s;    
+    }
+
+    .datebutton:hover{
+        scale: 125%;
+        transition-duration: 1s;
+    }
 
     .playbutton{
         left:45%;
