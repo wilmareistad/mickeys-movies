@@ -13,6 +13,7 @@ header img {
     padding-top: 1rem;
     display: flex;
     max-width: 100vw;
+    padding-left: 10%;
 }
 
 nav ul {
@@ -39,6 +40,7 @@ nav a {
     height: 150px;
     width: auto;
     max-width: 100vw;
+    padding-left: 0;
     }
 
   header {
