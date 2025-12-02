@@ -59,14 +59,14 @@
     padding: 0.25rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 25% 7vh;
+    grid-template-rows: 25% 75%;
     column-gap: 0.5rem;
     width: 96%;
     grid-template-areas:
     "ticketlabel"
     "datebuttons";
     border-radius:2%;
-    height:25vh;
+    height:auto;
     margin-left:2%;
     margin-bottom: 5%;
 }
@@ -197,7 +197,28 @@
     margin-left:2%;
 }
 
+/*--IPAD--*/
+@media(min-width:600px){
+    .datebuttons{
+        padding-left:5%;
+        padding-right:5%;
+    }
 
+    .ticketbox{
+        height:45rem;
+    }
+
+    .datebutton{
+        font-size:xx-large;
+    }
+
+    .ticketlabel{
+        font-size:50px;
+        margin-left:6%;
+        margin-top:5%;
+    }
+
+}
 
 /*---DÖLJS VID MOBILE---*/
 #trailerdesktop{
@@ -288,6 +309,9 @@
     .datebuttons{
         column-gap:0.25rem;
         grid-template-rows: 40% 40%;
+        padding-left: 0%;
+        padding-right:0%;
+
     }
 
     .datebutton{
@@ -295,12 +319,13 @@
         height:80%;
         padding: 10%;
         margin: 10%;
-    
+        font-size:medium;
     }
 
     .ticketlabel{
         margin-left:1vw;
         margin-top: 0.5vh;
+        font-size:x-large;
     }
 
     .ticketbox {
