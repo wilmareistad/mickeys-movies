@@ -16,7 +16,9 @@
 
 <body>
     <header>
-        <img src="logo2.png" alt="logo">
+        <a href="index.php">
+            <img src="logo2.png" alt="logo">
+        </a>
         <nav>
             <ul>
                 <li><a href="index.php">Start</a></li>
