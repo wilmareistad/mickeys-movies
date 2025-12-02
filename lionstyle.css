@@ -36,7 +36,7 @@
 
 .datebutton{
     background-color:white;
-    height:10vh;
+    height:auto;
     padding: 1vw;
     margin: 1vh;
     border-radius:10%;
@@ -59,14 +59,14 @@
     padding: 0.25rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 8vh 7vh;
+    grid-template-rows: 25% 7vh;
     column-gap: 0.5rem;
     width: 96%;
     grid-template-areas:
     "ticketlabel"
     "datebuttons";
     border-radius:2%;
-    height:35vh;
+    height:25vh;
     margin-left:2%;
     margin-bottom: 5%;
 }
@@ -147,6 +147,9 @@
 }
 
 .playbutton{
+    display:flex;
+    size: 60px;
+    justify-content:center;
     z-index:25;
     position:absolute;
     top: 35%;
@@ -167,7 +170,7 @@
 .image{
     height: auto;
     margin: 5%;
-    width:45vw;
+    width:90%;
     margin-left: 5%;
     border-radius: 15px;
 }
@@ -188,11 +191,7 @@
     background-color:#8C8c8c;
     color: white;
 }
-.playbutton{
-    display:flex;
-    size: 60px;
-    justify-content:center;
-}
+
 
 .titletext{
     margin-left:2%;
