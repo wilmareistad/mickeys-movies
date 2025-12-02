@@ -149,8 +149,8 @@
 .playbutton{
     z-index:25;
     position:absolute;
-    top: 22vw;
-    left: 45vw;
+    top: 35%;
+    left: 44%;
 }
 
 .trailerimg{
@@ -251,11 +251,11 @@
     }
 
     .infotext{
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .infotitle{
-        font-size:16px;
+        font-size:13px;
     }
 
     #trailermobile{
@@ -310,7 +310,7 @@
     padding: 0.25rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 7vh 2fr;
+    grid-template-rows: 25% 2fr;
     column-gap: 0.25rem;
     width: 30.5vw;
     height: 65%;
@@ -396,3 +396,12 @@
 
 }
 
+@media(min-width: 1600px){
+    .infotext{
+        font-size: 16px;
+    }
+
+    .infotitle{
+        font-size:16px;
+    }
+}
